@@ -4,8 +4,18 @@ function themaChange(){
   themaNum++
   if(themaNum % 2 == 1){
     $(':root').css({'--primaryColor': '#1a1a1a', '--secondaryColor': '#fff'})
+    $('.tools').addClass('dark')
+    $('.tools>li:nth-child(1)>span.graph>span').css({'--bgc': '#31a8ff'})
+    $('.tools>li:nth-child(2)>span.graph>span').css({'--bgc': '#ff9a00'})
+    $('.tools>li:nth-child(3)>span.graph>span').css({'--bgc': '#9999ff'})
+    $('.specList>li>ul>li>span.graph').css({'backgroundColor': '#333'})
   }else{
     $(':root').css({'--primaryColor': '#fff', '--secondaryColor': '#1a1a1a'})
+    $('.tools').removeClass('dark')
+    $('.tools>li:nth-child(1)>span.graph>span').css({'--bgc': '#001e36'})
+    $('.tools>li:nth-child(2)>span.graph>span').css({'--bgc': '#330000'})
+    $('.tools>li:nth-child(3)>span.graph>span').css({'--bgc': '#00005b'})
+    $('.specList>li>ul>li>span.graph').css({'backgroundColor': '#eaeaea'})
   }
 }
 

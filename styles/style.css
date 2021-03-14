@@ -145,6 +145,15 @@ nav{
 .specList>li>ul.tools>li:nth-child(3)>span:first-child{
   background-image: url("../images/icon_ae.png");
 }
+.specList>li>ul.dark>li:nth-child(1)>span:first-child{
+  background-image: url("../images/icon_ps_dark.png");
+}
+.specList>li>ul.dark>li:nth-child(2)>span:first-child{
+  background-image: url("../images/icon_ai_dark.png");
+}
+.specList>li>ul.dark>li:nth-child(3)>span:first-child{
+  background-image: url("../images/icon_ae_dark.png");
+}
 .specList>li>ul.skills>li:nth-child(1)>span:first-child{
   background-image: url("../images/icon_html.png");
 }
@@ -163,6 +172,15 @@ nav{
   height: 5px;
   background-color: #eaeaea;
 }
+/* .specList>li>ul.tools>li:nth-child(1)>span.graph>span{
+  --bgc: #001e36;
+}
+.specList>li>ul.tools>li:nth-child(2)>span.graph>span{
+  --bgc: #330000;
+}
+.specList>li>ul.tools>li:nth-child(3)>span.graph>span{
+  --bgc: #00005b;
+} */
 .specList>li>ul>li>span.graph>span{
   display: block;
   position: absolute;
@@ -250,8 +268,9 @@ nav{
   opacity: 0.2;
   position: absolute;
   left: -15px;
+  font-family: 'ChosunKm';
   font-size: 60px;
-  letter-spacing: -5px;
+  letter-spacing: -1px;
 }
 .swiper-slide .textBox h3{
   margin-top: 20px;
