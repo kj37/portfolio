@@ -1,0 +1,64 @@
+/*ALL*/
+.content{
+    width: 1080px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/*MV*/
+input{
+    display: none;
+}
+/*label_box*/
+.label_box{
+    display: flex;
+    justify-content: space-between;
+}
+label{
+    width: 246px;
+    cursor: pointer;
+}
+.img_box{
+    display: block;
+    position: relative;
+    width: 246px;
+    height: 138px;
+}
+.fa-youtube{
+    position: absolute;
+    top: 48px;
+    left: 98px;
+    width: 50px;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 4.5rem;
+    line-height: 5rem;
+    transition: all 0.1s;
+}
+label:hover .fa-youtube{
+    color: #ff0000;
+}
+.mv_title{
+    display: block;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    line-height: 5rem;
+}
+/*mv_box*/
+div[class^="mv"]{
+    display: none;
+    text-align: right;
+}
+.list{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: thin solid #aaa;
+    background: none;
+}
+.list:hover{
+    background-color: #f5f5f5;
+}
+.fa-list{
+    margin-right: 5px;
+}

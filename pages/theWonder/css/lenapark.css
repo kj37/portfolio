@@ -1,0 +1,38 @@
+/*LENA PARK*/
+.main_box{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.main_box:nth-of-type(2){
+    flex-direction: row;
+}
+/*text_box*/
+.text_box{
+    width: 50%;
+    margin: auto;
+    padding: 70px 30px;
+}
+.text{
+    line-height: 3.5rem;
+}
+.main_box:nth-of-type(1) .text{
+    text-align: justify;
+    line-height: 2rem;
+}
+/*img_box*/
+.img_box{
+    width: 50%;
+    height: 640px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.main_box:nth-of-type(1) .img_box{
+    background-image: url(../img/picture/lenapark_1.png);
+}
+.main_box:nth-of-type(2) .img_box{
+    background-image: url(../img/picture/lenapark_2.png);
+}
+.main_box:nth-of-type(3) .img_box{
+    background-image: url(../img/picture/lenapark_3.png);
+}

@@ -1,0 +1,14 @@
+/*THE WONDER*/
+.main_box{
+    display: flex;
+    flex-direction: row-reverse;
+    background: #f6f6f6;
+}
+.text_box{
+    width: 1240px;
+    margin: auto;
+    padding: 30px;
+}
+.text{
+    text-align: justify;
+}

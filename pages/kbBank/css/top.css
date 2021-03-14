@@ -1,0 +1,285 @@
+/*top*/
+.top{
+    width: 100%;
+}
+.top .inner{
+    position: relative;
+    z-index: 8888;
+    padding-top: 14px;
+    height: 44px;
+}
+/*logo*/
+.logo{
+    float: left;
+    margin-top: 6px;
+    width: 108px;
+    height: 24px;
+}
+.logo a{
+    overflow: hidden;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: url('../images/icon_set1.png') no-repeat -280px 2px;
+    text-indent: -999em;
+    white-space: nowrap;
+}
+/*gnb*/
+nav{
+    float: right;
+    height: 30px;
+    line-height: 30px;
+}
+.gnb{
+    position: relative;
+    height: 30px;
+    line-height: 30px;
+}
+.gnb>li{
+    position: relative;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+}
+.gnb>li>a{
+    position: relative;
+    display: block;
+    padding: 0 8px;
+    height: 30px;
+    color: #000;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: -1px;
+}
+.gnb>li.on>a:before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    margin: -4px 0 0 -3px;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+    border-bottom: 4px solid #ffe85a;
+}
+.gnb>li:nth-child(9).on>a:before,
+.gnb>li:nth-child(10).on>a:before{
+    margin-left: -10px;
+}
+/*line*/
+.gnb>li:nth-child(3),
+.gnb>li:nth-child(4),
+.gnb>li:nth-child(9){
+    margin-left: 15px;
+}
+.gnb>li:nth-child(3):before,
+.gnb>li:nth-child(4):before,
+.gnb>li:nth-child(9):before,
+.gnb>li:nth-child(10):before{
+    content: "";
+    float: left;
+    margin: 10.5px 0 9px -7px;
+    width: 1px;
+    height: 12px;
+    background-color: #c0c0c2;
+}
+.gnb>li:nth-child(10):before{
+    margin-left: 0;
+}
+/*caret*/
+.gnb>li:nth-child(9)>a,
+.gnb>li:nth-child(10)>a{
+    padding-right: 24px;
+}
+.gnb>li:nth-child(9)>a:after,
+.gnb>li:nth-child(10)>a:after{
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 4px solid #000;
+}
+/*search*/
+.gnb>li.open_search{
+    width: 30px;
+}
+.gnb>li.open_search>a{
+    overflow: hidden;
+    display: block;
+    background: url('../images/icon_set1.png') no-repeat -285px -85px;
+    text-indent: -999em;
+    white-space: nowrap;
+}
+/*sub_gnb*/
+.sub_gnb{
+    display: none;
+    position: absolute;
+    right: 50%;
+    top: 30px;
+    margin-right: -76px;
+    border-top: 2px solid #ffe85a;
+    width: 109px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 0 rgba(0,0,0,0.1);
+}
+.sub_gnb>ul{
+    padding: 13px 10px 15px;
+}
+.sub_gnb>ul>li>a{
+    display: block;
+    padding: 0 10px;
+    font-size: 13px;
+    line-height: 27px;
+    white-space: nowrap;
+}
+.sub_gnb>ul>li>a:hover{
+    background-color: #ffe85a;
+    color:#000;
+}
+/*menu_all & global*/
+.gnb>li:nth-child(9),
+.gnb>li:nth-child(10){
+    position: static;
+}
+.menu_all{
+    right: 0;
+    margin: 0;
+    padding: 13px 10px 15px;
+    width: 665px;
+}
+.menu_all>ul{
+    float: left;
+    margin-right: 15px;
+    padding: 0;
+    width: 150px;
+}
+.menu_all>ul:last-child{
+    margin: 0;
+}
+.global{
+    right: 0;
+    margin: 0;
+    padding: 13px 10px 15px;
+    width: 328px;
+}
+.global>ul{
+    padding: 0;
+}
+.global>ul>li{
+    float: left;
+    width: 150px;
+}
+.global>ul>li:nth-child(1){
+    clear: both;
+    width: 100%;
+}
+.global>ul:nth-child(2)>li{
+    width: 154px;
+}
+.global>ul:nth-child(2)>li:nth-child(1){
+    width: 100%;
+}
+.global>ul>li:nth-of-type(2n-1){
+    float: right;
+}
+.global>ul:nth-child(1)>li:nth-of-type(4){
+    width: 100%;
+    margin-bottom: 19px;
+}
+.global>ul>li>a{
+    position: relative;
+    padding-left: 39px;
+    line-height: 38px;
+}
+.global>ul:nth-child(2)>li>a{
+    padding-left: 40px;
+}
+.global>ul>li>a:before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 7px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+.global>ul:nth-child(2)>li>a:before{
+    top: 7.5px;
+    width: 25px;
+    height: 25px;
+}
+.global>ul:nth-child(1)>li:nth-of-type(2)>a:before{
+    background: url(../images/bg_flag.png) no-repeat -3px -3px;
+}
+.global>ul:nth-child(1)>li:nth-of-type(3)>a:before{
+    background: url(../images/icon_set_n1.png) no-repeat -80px -300px;
+}
+.global>ul:nth-child(1)>li:nth-of-type(4)>a:before{
+    background: url(../images/icon_set_n1.png) no-repeat 0 -300px;
+}
+.global>ul:nth-child(2)>li:nth-of-type(2)>a:before{
+    background: url('../images/icon_set1.png') no-repeat 0 0;
+}
+.global>ul:nth-child(2)>li:nth-of-type(3)>a:before{
+    background: url('../images/icon_set1.png') no-repeat -160px 0;
+}
+.global>ul:nth-child(2)>li:nth-of-type(4)>a:before{
+    background: url('../images/icon_set1.png') no-repeat -40px 0;
+}
+.global>ul:nth-child(2)>li:nth-of-type(5)>a:before{
+    background: url('../images/icon_set1.png') no-repeat -200px 0;
+}
+.global>ul:nth-child(2)>li:nth-of-type(6)>a:before{
+    background: url('../images/icon_set1.png') no-repeat -80px 0;
+}
+.global>ul:nth-child(2)>li:nth-of-type(7)>a:before{
+    background: url('../images/icon_set1.png') no-repeat -240px 0;
+}
+.global>ul:nth-child(2)>li:nth-of-type(8)>a:before{
+    background: url('../images/icon_set1.png') no-repeat -120px 0;
+}
+.global>ul:nth-child(2)>li:nth-of-type(9)>a:before{
+    background: url('../images/icon_set1.png') no-repeat -400px 0;
+}
+.sub_gnb>ul .title{
+    display: block;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    border-bottom: 1px solid #e7e4e2;
+    color: #53473f;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.sub_gnb a[target="_blank"]:after{
+    content: "";
+    display: inline-block;
+    margin-left: 6px;
+    width: 12px;
+    height: 12px;
+    background: url('../images/icon_set1.png') no-repeat -445px -5px;
+}
+/*cert_menu*/
+.cert_menu{
+    position: absolute;
+    left: 30px;
+    top: 57px;
+}
+.cert_menu li{
+    float: left;
+}
+.cert_menu li a{
+    display: block;
+    border: 1px solid #ddd;
+    padding: 0 10px;
+    height: 28px;
+    background-color: #fff;
+    color: #222;
+    font-size: 14px;
+    line-height: 25px;
+}
+.cert_menu li:nth-child(2) a{
+    border-left: 0;
+}

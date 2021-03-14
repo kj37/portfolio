@@ -1,0 +1,363 @@
+@import 'reset.css';
+@import 'common.css';
+@import 'fontawesome/css/all.min.css';
+
+/* HOME */
+.home .textBox{
+  position: absolute;
+  top: calc(50% - 70px);
+  left: 15%;
+}
+.home .textBox p{
+  font-family: 'GmarketSansMedium';
+  font-size: 36px;
+  letter-spacing: 1px;
+}
+.home .textBox h1{
+  height: 61px;
+}
+.home .textBox h1 span{
+  float: left;
+  animation: typing 0s var(--i) both;
+}
+@keyframes typing{
+  from{ opacity: 0; }
+  to{ opacity: 1; }
+}
+nav{
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  top: 0;
+  right: calc(15% - 20px);
+  z-index: 9999;
+  width: 100%;
+}
+.menu{
+  display: flex;
+  line-height: 90px;
+}
+.menu li a{
+  display: block;
+  padding: 0 20px;
+  height: 100%;
+  font-family: 'GmarketSansBold';
+  font-size: 14px;
+  letter-spacing: 1.5px;
+}
+.menu li a span{
+  position: relative;
+}
+.menu li a span:after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 1%;
+  width: 98%;
+  height: 2px;
+  background-color: var(--secondaryColor);
+  transition: all 0.2s ease-in-out;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+.menu li.on a span:after{
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.menu li a:hover span:after{
+  transform: scaleX(1);
+  transform-origin: right;
+}
+.themaBtn{
+  padding: 0 20px;
+  color: var(--secondaryColor);
+}
+
+/* ABOUT ME */
+.aboutMe .textBox{
+  position: absolute;
+  top: calc(50% - 80px);
+  left: 15%;
+}
+.specList{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  padding: 0 15%;
+  width: 100%;
+}
+.specList>li{
+  width: 280px;
+}
+.specList>li>span{
+  font-family: 'NanumSquareEB';
+  font-size: 20px;
+}
+.specList>li>ul{
+  margin-top: 20px;
+}
+.specList>li>ul>li{
+  position: relative;
+  margin-bottom: 5px;
+  padding: 7px 0;
+  line-height: 1;
+}
+.specList>li>ul>li:last-child{
+  margin-bottom: 0;
+}
+.specList>li>ul.profile>li>.fas{
+  display: block;
+  float: left;
+  margin: -7px 15px 0 5px;
+  height: 30px;
+  line-height: 30px;
+}
+.specList>li>ul.licenses>li>span{
+  display: inline-block;
+  margin-right: 15px;
+  font-family: 'NanumSquareB';
+}
+.specList>li>ul.tools>li,
+.specList>li>ul.skills>li{
+  padding: 0;
+  height: 30px;
+}
+.specList>li>ul.tools>li>span:first-child,
+.specList>li>ul.skills>li>span:first-child{
+  overflow: hidden;
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  text-indent: -999em;
+}
+.specList>li>ul.tools>li:nth-child(1)>span:first-child{
+  background-image: url("../images/icon_ps.png");
+}
+.specList>li>ul.tools>li:nth-child(2)>span:first-child{
+  background-image: url("../images/icon_ai.png");
+}
+.specList>li>ul.tools>li:nth-child(3)>span:first-child{
+  background-image: url("../images/icon_ae.png");
+}
+.specList>li>ul.skills>li:nth-child(1)>span:first-child{
+  background-image: url("../images/icon_html.png");
+}
+.specList>li>ul.skills>li:nth-child(2)>span:first-child{
+  background-image: url("../images/icon_css.png");
+}
+.specList>li>ul.skills>li:nth-child(3)>span:first-child{
+  background-image: url("../images/icon_js.png");
+}
+.specList>li>ul>li>span.graph{
+  display: block;
+  position: absolute;
+  top: 12px;
+  right: 0;
+  width: 240px;
+  height: 5px;
+  background-color: #eaeaea;
+}
+.specList>li>ul>li>span.graph>span{
+  display: block;
+  position: absolute;
+  top: 10;
+  left: 0;
+  width: var(--value);
+  height: 100%;
+  background-color: var(--bgc);
+  animation: graphAnimate 1s ease-out both;
+}
+@keyframes graphAnimate{
+  from{ width: 0; }
+  to{ width: var(--value); }
+}
+
+/* PORTFOLIO */
+.swiper-wrapper{
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.swiper-wrapper .swiper-slide{
+  cursor: move;
+  width: 100%;
+  height: 100vh;
+}
+.swiper-pagination{
+  position: absolute;
+  left: calc(50% - 52.5px);
+  bottom: 40px;
+  width: 105px;
+}
+.swiper-pagination .swiper-pagination-bullet{
+  opacity: 0.4;
+  cursor: pointer;
+  float: left;
+  margin-right: 5px;
+  border: 1px solid var(--secondaryColor);
+  border-radius: 5px;
+  background: none;
+  width: 10px;
+  height: 10px;
+}
+.swiper-pagination .swiper-pagination-bullet:last-child{
+  margin: 0;
+}
+.swiper-pagination .swiper-pagination-bullet:hover{
+  background-color: var(--secondaryColor);
+}
+.swiper-pagination .swiper-pagination-bullet:active{
+  opacity: 0.32;
+}
+.swiper-pagination .swiper-pagination-bullet-active{
+  opacity: 1;
+  border: none;
+  width: 45px;
+  background-color: var(--secondaryColor);
+}
+.swiper-pagination .swiper-pagination-bullet-active:hover{
+  background-color: var(--secondaryColor);
+}
+.swiper-pagination .swiper-pagination-bullet-active:active{
+  opacity: 1;
+}
+
+/* 임시 */
+.swiper-slide .textBox{
+  position: absolute;
+  top: calc(50% - 240px);
+  left: 15%;
+  width: 630px;
+}
+.swiper-slide .textBox .project{
+  position: relative;
+  color: var(--themaColor);
+  font-family: 'NanumSquareEB';
+  line-height: 56px;
+}
+.swiper-slide .textBox .project span{
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 56px;
+}
+.swiper-slide .textBox .project span:first-child{
+  opacity: 0.2;
+  position: absolute;
+  left: -15px;
+  font-size: 60px;
+  letter-spacing: -5px;
+}
+.swiper-slide .textBox h3{
+  margin-top: 20px;
+  font-family: 'NanumSquareEB';
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2px;
+}
+.swiper-slide .textBox h3 span{
+  display: inline-block;
+  width: 100%;
+  font-family: 'NanumSquare';
+  font-size: 20px;
+  line-height: 40px;
+  white-space: nowrap;
+}
+.netflix .textBox h3 span{
+  letter-spacing: 22.5px;
+}
+.theWonder .textBox h3 span{
+  letter-spacing: 3.75px;
+}
+.kbBank .textBox h3 span{
+  letter-spacing: 30px;
+}
+.cleantopia .textBox h3 span{
+  letter-spacing: 14px;
+}
+.typingGame .textBox h3 span{
+  letter-spacing: 12.5px;
+}
+.swiper-slide .textBox ul{
+  margin-top: 60px;
+}
+.swiper-slide .textBox ul li{
+  line-height: 30px;
+}
+.swiper-slide .textBox ul li span{
+  display: inline-block;
+  width: 80px;
+  color: var(--themaColor);
+  font-family: 'NanumSquareB';
+}
+.swiper-slide .textBox a{
+  display: inline-block;
+  margin-top: 60px;
+  width: 190px;
+  height: 50px;
+  border: 1px solid var(--themaColor);
+  color: var(--themaColor);
+  text-align: center;
+  line-height: 48px;
+  transition: all 0.2s ease;
+}
+.swiper-slide .textBox a:hover{
+  background-color: var(--themaColor);
+  color: #fff;
+}
+
+/* SUMMARY */
+.summary .textBox{
+  position: absolute;
+  top: calc(50% - 80px);
+  left: 15%;
+}
+.sumList{
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 120px;
+  left: 0;
+  padding: 0 15% 0 15%;
+  width: 100%;
+}
+.sumList>li{
+  width: 280px;
+}
+.sumList>li:first-child{
+  margin-right: 74.66px;
+}
+.sumList>li>span{
+  font-family: 'NanumSquareEB';
+  font-size: 20px;
+}
+.sumList>li>ul{
+  margin-top: 20px;
+}
+.sumList>li>ul>li{
+  position: relative;
+  margin-bottom: 5px;
+  padding: 7px 0;
+  line-height: 1;
+}
+.sumList>li>ul>li:last-child{
+  margin-bottom: 0;
+}
+.sumList>li>ul>li .fas{
+  display: block;
+  float: left;
+  margin: -7px 15px 0 0;
+  height: 30px;
+  line-height: 30px;
+}
+.sumList>li>ul.viewAll>li .fas{
+  margin: -7px 10px 0 5px;
+}
+.sumList>li>ul.viewAll>li>a:hover{
+  color: var(--themaColor);
+}

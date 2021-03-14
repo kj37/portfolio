@@ -1,0 +1,340 @@
+section{
+    
+}
+article{
+    min-width: 1100px;
+}
+.art-tit{
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    color: #121212;
+    text-align: center;
+    font-size: 38px;
+    font-weight: normal;
+    line-height: 1;
+    background-image: url(../images/article-title.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+/*슬라이더*/
+.visual{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 590px;
+}
+/*slider*/
+.visual .slider{
+    width: 100%;
+    height: 100%;
+}
+.visual .slider li{
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.visual .slider li:last-child{
+    left: 100%;
+}
+.visual .slider li img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    height: 100%;
+}
+/*control*/
+.control li a{
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 50%;
+    width: 21px;
+    height: 36px;
+    background-repeat: no-repeat;
+    text-indent: -999em;
+}
+.control li:first-child a{
+    left: 50%;
+    margin-left: -605px;
+    background-image: url(../images/slide_prev.png);
+}
+.control li:last-child a{
+    right: 50%;
+    margin-right: -605px;
+    background-image: url(../images/slide_next.png);
+}
+/*indicator*/
+.indi-box{
+    position: absolute;
+    left: 50%;
+    bottom: 45px;
+    margin-left: -41px;
+}
+.indicator{
+    float: left;
+    padding-top: 1px;
+}
+.indicator li{
+    float: left;
+    margin-right: 10px;
+}
+.indicator li a{
+    overflow: hidden;
+    display: block;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    text-indent: -999em;
+    background-color: #999;
+}
+.indicator li.on a{
+    width: 38px;
+    background-color: #2471c8;
+}
+/*player*/
+.indi-box button.player{
+    cursor: pointer;
+    display: block;
+    width: 12px;
+    height: 14px;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.indi-box button.play{
+    background-image: url(../images/player_play.png);
+    background-size: contain;
+}
+.indi-box button.stop{
+    background-image: url(../images/player_stop.png);
+    background-size: auto;
+}
+
+/*매장찾기*/
+.store-search{
+    width: 100%;
+    height: 164px;
+    background-image: url(../images/search-bg.jpg);
+    background-repeat: repeat-x;
+    background-position: center 0;
+    text-align: center;
+}
+.store-search form{
+    padding-top: 65px;
+}
+.store-search form label{
+    margin-right: 25px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.store-search form input[type="text"]{
+    width: 440px;
+    height: 36px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: #fff;
+    font-family: 'NanumBarunGothic';
+    font-size: 20px;
+    text-align: center;
+    line-height: 36px;
+    vertical-align: middle;
+}
+.store-search form input[type="text"]::placeholder{
+    color: #cddef2;
+    font-family: 'NanumBarunGothic';
+    font-weight: normal;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.store-search form input[type="submit"]{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    background-image: url(../images/search-icon.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-indent: -999em;
+    vertical-align: middle;
+}
+
+/*메인 배너*/
+.main-banner{
+    padding: 20px 0;
+    background-color: #f6f7fa;
+}
+.main-banner ul{
+    display: flex;
+    justify-content: space-between;
+}
+.main-banner .inner a img{
+    display: block;
+}
+
+/*서비스*/
+.service{
+    padding: 80px 0 90px;
+}
+.service .item{
+    position: relative;
+    width: 740px;
+    height: 310px;
+}
+.service .item:nth-child(2){
+    margin-top: 20px;
+}
+.service .item .thum{
+    display: block;
+}
+.service .item .thum img{
+    display: block;
+}
+.service .item .text{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 45px 0 0 50px;
+}
+.service .item .text i{
+    display: inline-block;
+    padding: 0 1.5em;
+    border-radius: 13px;
+    background-color: #2471c8;
+    color: #fff;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 2.2em;
+}
+.service .item .text span:nth-of-type(1){
+    display: block;
+    margin: 15px 0 10px;
+    font-size: 26px;
+    line-height: 1.1;
+}
+.service .item .text span:nth-of-type(2){
+    display: block;
+    margin-bottom: 70px;
+    color: #747474;
+    font-size: 14px;
+    line-height: 1.1;
+}
+.service .item .text em{
+    color: #333;
+    font-family: 'Roboto';
+    font-style: normal;
+    text-decoration: underline;
+}
+.service .item2{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 340px;
+    height: 640px;
+}
+.service .item2 img{
+    display: block;
+}
+
+/*스토리*/
+.story{
+    padding-top: 112px;
+    width: 100%;
+    height: 320px;
+    background-image: url(../images/story.jpg);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    color: #fff;
+    text-align: center;
+}
+.story strong{
+    display: block;
+    font-family: 'Roboto';
+    font-size: 28px;
+    text-transform: uppercase;
+    line-height: 1;
+}
+.story span{
+    display: block;
+    margin-top: 10px;
+    font-size: 32px;
+    line-height: 1.5em;
+}
+.story span em{
+    font-style: normal;
+}
+
+/*창업*/
+.found{
+    padding: 80px 0 90px;
+    background-color: #f6f7fa;
+}
+.found ul{
+    display: flex;
+    justify-content: space-between;
+}
+.found ul li{
+    position: relative;
+    width: 356px;
+    height: 440px;
+    background-color: #fff;
+    color: #121212;
+    text-align: center;
+}
+.found ul li a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.found ul li img{
+    display: block;
+}
+.found ul li img.bg{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.found ul li strong{
+    display: block;
+    padding-top: 35px;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+.found ul li em{
+    display: inline-block;
+    margin-top: 60px;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    text-decoration: underline;
+}
+.found ul li:hover{
+    background-color: #8ed585;
+    color: #fff;
+}
+.found ul li:hover:after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 356px;
+    height: 220px;
+    background-image: url(../images/found-bg.png);
+}

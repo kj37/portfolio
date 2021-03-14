@@ -1,0 +1,183 @@
+/*content*/
+.content{
+    width: 1280px;
+    margin: auto;
+    padding: 50px 0;
+}
+
+/*ALBUM*/
+.title{
+    padding-bottom: 50px;
+}
+/*single_box*/
+.single_box{
+    margin-bottom: 50px;
+    width: 1280px;
+    height: 300px;
+}
+.single{
+    position: relative;
+    float: left;
+    margin-right: 190px;
+    width: 300px;
+}
+.single:last-child{
+    margin: 0;
+}
+.single .img_box{
+    width: 300px;
+    padding: 5px;
+    border: thin solid #eee;
+}
+.single img{
+    width: 100%;
+}
+.single .text_box{
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 290px;
+    height: 290px;
+    padding: 170px 20px 20px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    color: #efefef;
+    text-align: left;
+    line-height: 2.4rem;
+    transition: all 0.2s;
+}
+.single_title{
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 3.2rem;
+}
+.single_date{
+    color: #aaa;
+    font-size: 1.2rem;
+}
+.single_track{
+    line-height: 2rem;
+}
+.single:hover .text_box{
+    opacity: 1;
+}
+/*regular_box*/
+.regular_box{
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+.regular_box .img_box{
+    width: 640px;
+    padding: 10px;
+    border: thin solid #eee;
+}
+.regular_box img{
+    width: 100%;
+}
+.regular_box .text_box{
+    display: block;
+    position: static;
+    width: 640px;
+    height: 640px;
+    padding: 0 30px;
+    background: none;
+    color: #242424;
+    line-height: 2rem;
+}
+.regular_title{
+    margin-bottom: 15px;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.regular_infor{
+    margin-bottom: 15px;
+    width: 100%;
+    line-height: 2.6rem;
+}
+.regular_infor tr td:nth-of-type(1){
+    width: 15%;
+    color: #aaa;
+}
+.regular_track{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    border-collapse: collapse;
+}
+.regular_track tr{
+    height: 56px;
+    border-bottom: thin solid #eee;
+}
+.regular_track tr:hover{
+    background-color: #fafafa;
+}
+.regular_track tr:last-of-type{
+    border: none;
+}
+.regular_track tr td:nth-of-type(2){
+    text-align: left;
+}
+.regular_track tr td:nth-of-type(3){
+    color: #d3d3d3;
+    text-align: right;
+}
+.title_song{
+    margin-right: 5px;
+    padding: 2px 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 1rem;
+    background: #f39863;
+}
+.regular_box .fa-plus{
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.1s;
+}
+.regular_box .fa-plus:hover{
+    color: #f39863;
+}
+
+/*track 소개*/
+article[id^="track"]{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.track_box{
+    margin: 150px auto 0;
+    padding: 30px;
+    width: 860px;
+    background: #fff;
+    text-align: justify;
+}
+.track_title{
+    padding: 0 0 20px;
+    border-bottom: thin solid #eee;
+    font-size: 2.4rem;
+    font-weight: bold;
+}
+.track_num{
+    font-size: 1.6rem;
+    font-weight: normal;
+}
+.track_maker{
+    padding: 20px 0;
+}
+.track_close{
+    border: thin solid #d3d6da;
+    border-radius: 5px;
+    margin: 30px 0 0 350px;
+    width: 100px;
+    height: 40px;
+    background: none;
+}
+.track_intro{
+    line-height: 2.2rem;
+}
